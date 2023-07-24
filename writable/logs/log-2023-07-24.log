@@ -1,0 +1,72 @@
+CRITICAL - 2023-07-24 14:34:26 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('login', 'get')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-24 14:35:37 --> Call to undefined function App\Controllers\new\App\Models\ModelAdmin()
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-24 14:36:21 --> Call to undefined function App\Controllers\new\App\Models\ModelAdmin()
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-24 14:36:22 --> Call to undefined function App\Controllers\new\App\Models\ModelAdmin()
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-24 14:36:23 --> Call to undefined function App\Controllers\new\App\Models\ModelAdmin()
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-24 14:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-24 14:42:50 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 15.
+ 1 APPPATH\Controllers\Login.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Controllers\\Login.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-24 14:46:05 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Controllers\\Login.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-24 14:46:12 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Controllers\\Login.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-24 14:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-24 14:46:34 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Controllers\\Login.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-24 14:46:51 --> Undefined variable $err
+in APPPATH\Controllers\Login.php on line 19.
+ 1 APPPATH\Controllers\Login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $err', 'D:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Controllers\\Login.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-24 14:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-24 14:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-24 14:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
