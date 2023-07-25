@@ -1,0 +1,163 @@
+CRITICAL - 2023-07-25 06:55:46 --> Invalid file: "konten/pengguna_read.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten/pengguna_read.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('konten/pengguna_read', [], true)
+ 3 APPPATH\Controllers\PenggunaController.php(47): view('konten/pengguna_read', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 06:56:04 --> Undefined array key "halaman_id"
+in APPPATH\Views\pengguna_read.php on line 27.
+ 1 APPPATH\Views\pengguna_read.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "halaman_id"', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(47): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:03:02 --> syntax error, unexpected single-quoted string "email", expecting "]"
+in APPPATH\Controllers\PenggunaController.php on line 58.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('PenggunaController/pengguna_read', 'get')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('PenggunaController/pengguna_read')
+ 3 SYSTEMPATH\CodeIgniter.php(813): CodeIgniter\Router\Router->handle('PenggunaController/pengguna_read')
+ 4 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:13:15 --> Undefined variable $data_pengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(80): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:14:32 --> Undefined variable $dataPengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataPengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(80): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:14:39 --> Undefined variable $dataPengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataPengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(80): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:17:14 --> Undefined variable $dataPengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataPengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [...], true)
+ 5 APPPATH\Controllers\PenggunaController.php(80): view('pengguna_update', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:17:46 --> Undefined variable $data_pengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [...], true)
+ 5 APPPATH\Controllers\PenggunaController.php(80): view('pengguna_update', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:26:23 --> Undefined variable $data_pengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [...], true)
+ 5 APPPATH\Controllers\PenggunaController.php(81): view('pengguna_update', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:27:22 --> Undefined variable $data_pengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [...], true)
+ 5 APPPATH\Controllers\PenggunaController.php(81): view('pengguna_update', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:28:44 --> Undefined variable $data_pengguna
+in APPPATH\Views\pengguna_update.php on line 23.
+ 1 APPPATH\Views\pengguna_update.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(82): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-07-25 07:29:17 --> Too few arguments to function App\Controllers\PenggunaController::pengguna_update(), 0 passed in C:\xampp\htdocs\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\vendor\codeigniter4\framework\system\CodeIgniter.php on line 932 and exactly 1 expected
+in APPPATH\Controllers\PenggunaController.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-07-25 07:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-25 07:35:22 --> Undefined property: App\Controllers\PenggunaController::$session
+in APPPATH\Controllers\PenggunaController.php on line 78.
+ 1 APPPATH\Controllers\PenggunaController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PenggunaController::$session', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Controllers\\PenggunaController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('7')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-07-25 07:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-25 07:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

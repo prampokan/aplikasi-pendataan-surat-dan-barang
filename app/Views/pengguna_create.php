@@ -10,30 +10,35 @@
 </head>
 
 <body>
+    <?php if (!empty($errorMessages)) : ?>
+        <div style="color: red;">
+            <?php echo implode('<br>', $errorMessages); ?>
+        </div>
+    <?php endif; ?>
     <form action="" method="POST">
         <table>
             <tr>
                 <td>Nama</td>
                 <td>
-                    <textarea style="width:400px;" name="name"></textarea>
+                    <input type="text" style="width:400px;" name="name"></input>
                 </td>
             </tr>
             <tr>
                 <td>Username</td>
                 <td>
-                    <textarea style="width:400px;" name="username"></textarea>
+                    <input type="text" style="width:400px;" name="username"></input>
                 </td>
             </tr>
             <tr>
                 <td>Email</td>
                 <td>
-                    <textarea style="width:400px;" name="email"></textarea>
+                    <input type="text" style="width:400px;" name="email"></input>
                 </td>
             </tr>
             <tr>
                 <td>Password</td>
                 <td>
-                    <textarea style="width:400px;" name="password"></textarea>
+                    <input type="password" style="width:400px;" name="password"></input>
                 </td>
             </tr>
             <tr>
