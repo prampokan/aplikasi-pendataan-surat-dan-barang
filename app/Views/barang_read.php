@@ -19,7 +19,7 @@
     }
 
     table {
-        width: 50%;
+        width: 80%;
     }
 </style>
 
@@ -39,6 +39,7 @@
             <th>Foto Pertama</th>
             <th>Foto Kedua</th>
             <th>Foto Ketiga</th>
+            <th>Aksi</th>
         </tr>
         <?php
         foreach ($data_barang as $k => $v) {
@@ -49,9 +50,9 @@
                 <td><?php echo $v['id_penerima'] ?></td>
                 <td><?php echo $v['status'] ?></td>
                 <td><?php echo $v['catatan'] ?></td>
-                <td><?php echo $v['foto1'] ?></td>
-                <td><?php echo $v['foto2'] ?></td>
-                <td><?php echo $v['foto3'] ?></td>
+                <td><img src="<?php echo base_url('public/img/' . $v['foto1']) ?>" width="100"></td>
+                <td><img src="<?php echo base_url('public/img/' . $v['foto2']) ?>" width="100"></td>
+                <td><img src="<?php echo base_url('public/img/' . $v['foto3']) ?>" width="100"></td>
                 <td>
                     <a href="pengguna_update/<?php echo $v['id'] ?>">Update</a> |
                     <a href="pengguna_delete/<?php echo $v['id'] ?>">Delete</a>

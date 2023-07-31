@@ -15,7 +15,7 @@
             <?php echo implode('<br>', $errorMessages); ?>
         </div>
     <?php endif; ?>
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
         <table>
             <tr>
                 <td>No Resi</td>
@@ -50,21 +50,21 @@
             <tr>
                 <td>Foto Pertama</td>
                 <td>
-                    <input type="file" style="width:400px;" name="foto1"></input>
+                    <input type="file" style="width:400px;" name="foto1" id="foto1"></input>
                 </td>
             </tr>
-            <!-- <tr>
+            <tr>
                 <td>Foto Kedua</td>
                 <td>
-                    <input type="file" style="width:400px;" name="foto2"></input>
+                    <input type="file" style="width:400px;" name="foto2" id="foto2"></input>
                 </td>
             </tr>
             <tr>
                 <td>Foto Ketiga</td>
                 <td>
-                    <input type="file" style="width:400px;" name="foto3"></input>
+                    <input type="file" style="width:400px;" name="foto3" id="foto3"></input>
                 </td>
-            </tr> -->
+            </tr>
             <tr>
                 <td>
                     <input type="submit" name="simpan" value="Simpan Data">
