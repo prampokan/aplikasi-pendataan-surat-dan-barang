@@ -50,9 +50,9 @@
                 <td><?php echo $v['id_penerima'] ?></td>
                 <td><?php echo $v['status'] ?></td>
                 <td><?php echo $v['catatan'] ?></td>
-                <td><img src="<?php echo base_url('public/img/' . $v['foto1']) ?>" width="100"></td>
-                <td><img src="<?php echo base_url('public/img/' . $v['foto2']) ?>" width="100"></td>
-                <td><img src="<?php echo base_url('public/img/' . $v['foto3']) ?>" width="100"></td>
+                <td><img src="<?php echo base_url('/public/img/' . $v['foto1']) ?>" width="100"></td>
+                <td><img src="<?php echo base_url('/public/img/' . $v['foto2']) ?>" width="100"></td>
+                <td><img src="<?php echo base_url('/public/img/' . $v['foto3']) ?>" width="100"></td>
                 <td>
                     <a href="pengguna_update/<?php echo $v['id'] ?>">Update</a> |
                     <a href="pengguna_delete/<?php echo $v['id'] ?>">Delete</a>

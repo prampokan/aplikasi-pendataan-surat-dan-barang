@@ -73,6 +73,7 @@ class BarangController extends BaseController
     {
         $barangModel = new ModelBarang();
         $data['data_barang'] = $barangModel->findAll();
+        $data['foto1'] = $barangModel->findAll();
         echo view("barang_read", $data);
     }
 }
