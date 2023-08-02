@@ -54,8 +54,8 @@
                 <td><img src="<?php echo base_url('img/' . $v['foto2']) ?>" width="100"></td>
                 <td><img src="<?php echo base_url('img/' . $v['foto3']) ?>" width="100"></td>
                 <td>
-                    <a href="pengguna_update/<?php echo $v['id'] ?>">Update</a> |
-                    <a href="pengguna_delete/<?php echo $v['id'] ?>">Delete</a>
+                    <a href="barang_update/<?php echo $v['id'] ?>">Update</a> |
+                    <a href="barang_delete/<?php echo $v['id'] ?>">Delete</a>
                 </td>
             </tr>
         <?php

@@ -34,6 +34,10 @@ class PenggunaController extends BaseController
                 ];
 
                 $penggunaModel->save($dataPengguna);
+
+                session()->setFlashdata('success', 'Tambah data berhasil!');
+
+                return redirect()->to('/PenggunaController/pengguna_read');
             }
         }
 
