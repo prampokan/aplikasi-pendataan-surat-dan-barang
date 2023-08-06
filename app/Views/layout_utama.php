@@ -32,7 +32,7 @@
     <div class="wrapper">
         <?php echo $this->include('sidebar') ?>
         <?php echo $this->include('navbar') ?>
-        <?php echo $this->renderSection("konten_utama") ?>
+        <?php echo $this->renderSection('konten_utama') ?>
         <?php echo $this->include('admin_footer') ?>
     </div>
     <!-- ./wrapper -->

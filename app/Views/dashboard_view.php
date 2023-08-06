@@ -1,6 +1,6 @@
-<?php echo $this->extend("layout_utama") ?>
+<?php echo $this->extend('layout_utama') ?>
 
-<?php echo $this->section("konten_utama") ?>
+<?php echo $this->section('konten_utama') ?>
 
 
 <!-- Content Wrapper. Contains page content -->
