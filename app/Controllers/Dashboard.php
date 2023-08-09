@@ -6,6 +6,7 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        return view("layout_utama");
+        $data['title'] = "Dashboard";
+        return view('dashboard_view', $data);
     }
 }

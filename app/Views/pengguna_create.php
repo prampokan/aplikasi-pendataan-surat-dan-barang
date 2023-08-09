@@ -1,55 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php echo $this->extend('layout_utama') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        create pengguna
-    </title>
-</head>
+<?php echo $this->section('konten_utama') ?>
 
-<body>
-    <?php if (!empty($errorMessages)) : ?>
-        <div style="color: red;">
-            <?php echo implode('<br>', $errorMessages); ?>
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Tambah Data Pengguna</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/PenggunaController/pengguna_read">Data Pengguna</a></li>
+                        <li class="breadcrumb-item active">Tambah Data Pengguna</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <div class="content">
+        <div class="card card-info card-outline">
+            <?php if (!empty($errorMessages)) : ?>
+                <div style="color: red;">
+                    <?php echo implode('<br>', $errorMessages); ?>
+                </div>
+            <?php endif; ?>
+            <div class="card-body">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Nama Pengguna"></input>
+                    </div>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username Pengguna"></></input>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" name="email" placeholder="Email Pengguna"></></input>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password Pengguna"></></input>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="simpan" class="btn btn-success">Simpan Data</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    <?php endif; ?>
-    <form action="" method="POST">
-        <table>
-            <tr>
-                <td>Nama</td>
-                <td>
-                    <input type="text" style="width:400px;" name="name"></input>
-                </td>
-            </tr>
-            <tr>
-                <td>Username</td>
-                <td>
-                    <input type="text" style="width:400px;" name="username"></input>
-                </td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>
-                    <input type="text" style="width:400px;" name="email"></input>
-                </td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>
-                    <input type="password" style="width:400px;" name="password"></input>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" name="simpan" value="Simpan Data">
-                </td>
-            </tr>
-        </table>
-    </form>
+    </div>
+</div>
 
-</body>
-
-</html>
+<?php echo $this->endSection() ?>

@@ -12,6 +12,8 @@ class BarangController extends BaseController
     {
         $barangModel = new ModelBarang();
         $errorMessages = [];
+        $data['title'] = "Data Barang";
+        echo view("barang_create", $data);
 
         if ($this->request->getMethod() == 'post') {
             $no_resi = $this->request->getPost('no_resi');
@@ -64,6 +66,7 @@ class BarangController extends BaseController
 
     public function barang_read()
     {
+        $data['title'] = "Data Barang";
         $barangModel = new ModelBarang();
         $data['data_barang'] = $barangModel->findAll();
         echo view("barang_read", $data);
@@ -73,6 +76,8 @@ class BarangController extends BaseController
     {
         $barangModel = new ModelBarang();
         $errorMessages = [];
+        $data['title'] = "Data Barang";
+        echo view("barang_update", $data);
 
         if ($this->request->getMethod() == 'post') {
             $no_resi = $this->request->getPost('no_resi');
