@@ -12,8 +12,6 @@ class BarangController extends BaseController
     {
         $barangModel = new ModelBarang();
         $errorMessages = [];
-        $data['title'] = "Data Barang";
-        echo view("barang_create", $data);
 
         if ($this->request->getMethod() == 'post') {
             $no_resi = $this->request->getPost('no_resi');
@@ -60,24 +58,25 @@ class BarangController extends BaseController
             }
         }
 
-        return view("barang_create", ['errorMessages' => $errorMessages]);
+        $data['title'] = "Data Barang";
+        return view("barang_create", ['errorMessages' => $errorMessages, 'data' => $data]);
     }
 
 
     public function barang_read()
     {
-        $data['title'] = "Data Barang";
         $barangModel = new ModelBarang();
-        $data['data_barang'] = $barangModel->findAll();
-        echo view("barang_read", $data);
+        $data = [
+            'title' => "Data Barang",
+            'data_barang' => $barangModel->findAll(),
+        ];
+        echo view("barang_read", ['data' => $data]);
     }
 
     public function barang_update($id)
     {
         $barangModel = new ModelBarang();
         $errorMessages = [];
-        $data['title'] = "Data Barang";
-        echo view("barang_update", $data);
 
         if ($this->request->getMethod() == 'post') {
             $no_resi = $this->request->getPost('no_resi');
@@ -124,10 +123,11 @@ class BarangController extends BaseController
                 return redirect()->to('/BarangController/barang_read');
             }
         }
-
+        $data['title'] = "Data Barang";
         $data_barang = $barangModel->find($id);
-        return view("barang_update", ['errorMessages' => $errorMessages, 'data_barang' => $data_barang]);
+        return view("barang_update", ['errorMessages' => $errorMessages, 'data_barang' => $data_barang, 'data' => $data]);
     }
+
     public function barang_delete($id)
     {
         $barangModel = new ModelBarang();

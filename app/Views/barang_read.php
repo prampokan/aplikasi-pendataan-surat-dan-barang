@@ -44,7 +44,7 @@
                         <th style="width:70px;">Aksi</th>
                     </tr>
                     <?php
-                    foreach ($data_barang as $k => $v) {
+                    foreach ($data['data_barang'] as $k => $v) {
                     ?>
                         <tr>
                             <td><?php echo $v['no_resi'] ?></td>

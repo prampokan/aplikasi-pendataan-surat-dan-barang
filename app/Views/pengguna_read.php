@@ -39,7 +39,7 @@
                         <th>Aksi</th>
                     </tr>
                     <?php
-                    foreach ($data_pengguna as $k => $v) {
+                    foreach ($data['data_pengguna'] as $k => $v) {
                     ?>
                         <tr>
                             <td><?php echo $v['name'] ?></td>
