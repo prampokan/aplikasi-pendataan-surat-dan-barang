@@ -130,8 +130,10 @@ class BarangController extends BaseController
 
     public function barang_delete($id)
     {
+        $data['title'] = "Data Barang";
         $barangModel = new ModelBarang();
         $barangModel->delete($id);
+        echo view("barang_create", ['data' => $data]);
         return redirect()->to('/BarangController/barang_read')->with('success', 'Data barang berhasil dihapus.');
     }
 }

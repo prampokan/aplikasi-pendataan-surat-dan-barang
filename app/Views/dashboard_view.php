@@ -15,7 +15,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard v1</li>
+            <li class="breadcrumb-item active">Dashboard</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -31,14 +31,13 @@
           <!-- small box -->
           <div class="small-box bg-info">
             <div class="inner">
-              <h3>150</h3>
-
-              <p>New Orders</p>
+              <h3><?php echo $data['total_barang'] ?></h3>
+              <p>Data Barang</p>
             </div>
             <div class="icon">
-              <i class="ion ion-bag"></i>
+              <i class="fa fa-archive"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="/BarangController/barang_read" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -46,12 +45,12 @@
           <!-- small box -->
           <div class="small-box bg-success">
             <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
+              <h3>100</h3>
 
-              <p>Bounce Rate</p>
+              <p>Data Surat</p>
             </div>
             <div class="icon">
-              <i class="ion ion-stats-bars"></i>
+              <i class="fa fa-envelope"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
@@ -63,10 +62,10 @@
             <div class="inner">
               <h3>44</h3>
 
-              <p>User Registrations</p>
+              <p>Data Karyawan</p>
             </div>
             <div class="icon">
-              <i class="ion ion-person-add"></i>
+              <i class="fa fa-user"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
@@ -76,14 +75,14 @@
           <!-- small box -->
           <div class="small-box bg-danger">
             <div class="inner">
-              <h3>65</h3>
+              <h3><?php echo $data['total_pengguna'] ?></h3>
 
-              <p>Unique Visitors</p>
+              <p>Data Pengguna</p>
             </div>
             <div class="icon">
-              <i class="ion ion-pie-graph"></i>
+              <i class="fa fa-user-secret"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="/PenggunaController/pengguna_read" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

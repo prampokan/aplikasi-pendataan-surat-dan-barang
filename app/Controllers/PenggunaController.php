@@ -50,7 +50,7 @@ class PenggunaController extends BaseController
         $penggunaModel = new ModelPengguna();
         $data = [
             'title' => "Data Pengguna",
-            'data_pengguna' => $penggunaModel->findAll()
+            'data_pengguna' => $penggunaModel->findAll(),
         ];
         // $data['title'] = "Data Pengguna";
         // $data['data_pengguna'] = $penggunaModel->findAll();
@@ -62,7 +62,6 @@ class PenggunaController extends BaseController
         $penggunaModel = new ModelPengguna();
         $errorMessages = [];
         $data['title'] = "Data Pengguna";
-        echo view("pengguna_create", $data);
 
         if ($this->request->getMethod() == 'post') {
             $name = $this->request->getPost('name');
@@ -94,13 +93,13 @@ class PenggunaController extends BaseController
         }
 
         $data_pengguna = $penggunaModel->find($id);
-        return view("pengguna_update", ['errorMessages' => $errorMessages, 'data_pengguna' => $data_pengguna]);
+        return view("pengguna_update", ['errorMessages' => $errorMessages, 'data_pengguna' => $data_pengguna, 'data' => $data]);
     }
 
     public function pengguna_delete($id)
     {
         $data['title'] = "Data Pengguna";
-        echo view("pengguna_create", $data);
+        echo view("pengguna_read", ['data' => $data]);
         $penggunaModel = new ModelPengguna();
         $penggunaModel->delete($id);
         return redirect()->to('/PenggunaController/pengguna_read')->with('success', 'Data pengguna berhasil dihapus.');

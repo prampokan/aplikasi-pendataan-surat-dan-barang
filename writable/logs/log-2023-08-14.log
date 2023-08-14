@@ -1,0 +1,542 @@
+INFO - 2023-08-14 09:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:41:38 --> Undefined variable $data
+in APPPATH\Views\layout_utama.php on line 7.
+ 1 APPPATH\Views\layout_utama.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\layout_utama.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\layout_utama.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout_utama', [], true)
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_create', [], true)
+ 6 APPPATH\Controllers\PenggunaController.php(65): view('pengguna_create', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:42:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user1-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:42:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user8-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:42:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user3-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:43:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user1-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:43:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user8-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:43:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user3-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:43:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user1-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:43:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user8-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:43:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\pengguna_update.php on line 32.
+ 1 APPPATH\Views\pengguna_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_update', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(96): view('pengguna_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_update('dist', 'img', 'user3-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:49:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 35.
+ 1 APPPATH\Views\barang_update.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user1-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:49:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 35.
+ 1 APPPATH\Views\barang_update.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user8-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:49:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 35.
+ 1 APPPATH\Views\barang_update.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user3-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:50:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user1-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:50:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user8-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:50:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user3-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:50:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user1-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:51:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user8-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:51:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user3-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:53:06 --> Invalid file: "barang_delete.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_delete.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_delete', [], true)
+ 3 APPPATH\Controllers\BarangController.php(136): view('barang_delete', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_delete('10')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:53:44 --> Undefined array key "data_barang"
+in APPPATH\Views\barang_read.php on line 47.
+ 1 APPPATH\Views\barang_read.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_barang"', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_read.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_read', [], true)
+ 5 APPPATH\Controllers\BarangController.php(136): view('barang_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_delete('10')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 09:58:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user1-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:58:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user8-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 09:58:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\barang_update.php on line 32.
+ 1 APPPATH\Views\barang_update.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\barang_update.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('barang_update', [], true)
+ 5 APPPATH\Controllers\BarangController.php(128): view('barang_update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BarangController->barang_update('dist', 'img', 'user3-128x128.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 09:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 09:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 10:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 12:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:19:38 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\pengguna_read.php on line 42.
+ 1 APPPATH\Views\pengguna_read.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:22:57 --> Undefined variable $total_pengguna
+in APPPATH\Views\pengguna_read.php on line 35.
+ 1 APPPATH\Views\pengguna_read.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(58): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:27:44 --> Undefined array key "total_pengguna"
+in APPPATH\Views\pengguna_read.php on line 35.
+ 1 APPPATH\Views\pengguna_read.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_pengguna"', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:28:27 --> Undefined array key "total_pengguna"
+in APPPATH\Views\dashboard_view.php on line 34.
+ 1 APPPATH\Views\dashboard_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_pengguna"', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard_view', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 13:29:13 --> Undefined variable $total_pengguna
+in APPPATH\Views\dashboard_view.php on line 34.
+ 1 APPPATH\Views\dashboard_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard_view', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 13:29:14 --> Undefined variable $total_pengguna
+in APPPATH\Views\dashboard_view.php on line 34.
+ 1 APPPATH\Views\dashboard_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard_view', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 13:29:55 --> Undefined variable $total_pengguna
+in APPPATH\Views\dashboard_view.php on line 34.
+ 1 APPPATH\Views\dashboard_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard_view', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+CRITICAL - 2023-08-14 13:29:58 --> Undefined variable $total_pengguna
+in APPPATH\Views\dashboard_view.php on line 34.
+ 1 APPPATH\Views\dashboard_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard_view', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:34:59 --> Undefined variable $total_pengguna
+in APPPATH\Views\pengguna_read.php on line 35.
+ 1 APPPATH\Views\pengguna_read.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:35:02 --> Undefined variable $total_pengguna
+in APPPATH\Views\pengguna_read.php on line 35.
+ 1 APPPATH\Views\pengguna_read.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:35:09 --> Undefined variable $total_pengguna
+in APPPATH\Views\pengguna_read.php on line 35.
+ 1 APPPATH\Views\pengguna_read.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-14 13:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:36:48 --> Undefined variable $total_pengguna
+in APPPATH\Views\pengguna_read.php on line 35.
+ 1 APPPATH\Views\pengguna_read.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-14 13:37:30 --> Undefined variable $total_pengguna
+in APPPATH\Views\dashboard_view.php on line 34.
+ 1 APPPATH\Views\dashboard_view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\dashboard_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard_view', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-14 13:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

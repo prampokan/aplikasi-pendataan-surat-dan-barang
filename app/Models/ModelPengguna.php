@@ -24,4 +24,8 @@ class ModelPengguna extends Model
     // protected $validationRules      = [];
     // protected $validationMessages   = [];
     // protected $skipValidation       = false;
+    public function countTotalPengguna()
+    {
+        return $this->countAll();
+    }
 }

@@ -27,7 +27,7 @@
         <div class="card card-info card-outline">
             <div class="card-header">
                 <div class="card-tools">
-                    <a href="/BarangController/barang_create" class="btn btn-success">Tambah Data <i class="fas fa-plus-square"></i></a>
+                    <a href="/BarangController/barang_create" class="btn btn-primary"><i class="fa fa-plus"></i></a>
                 </div>
             </div>
             <div class="card-body">
@@ -56,7 +56,7 @@
                             <td><img src="<?php echo base_url('img/' . $v['foto2']) ?>" width="100"></td>
                             <td><img src="<?php echo base_url('img/' . $v['foto3']) ?>" width="100"></td>
                             <td>
-                                <a href="barang_update/<?php echo $v['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a> |
+                                <a href="barang_update/<?php echo $v['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                 <a href="barang_delete/<?php echo $v['id'] ?>"><i class="fa-solid fa-trash" style="color: red"></i></a>
                             </td>
                         </tr>

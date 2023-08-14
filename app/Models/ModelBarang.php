@@ -24,4 +24,8 @@ class ModelBarang extends Model
     // protected $validationRules      = [];
     // protected $validationMessages   = [];
     // protected $skipValidation       = false;
+    public function countTotalBarang()
+    {
+        return $this->countAll();
+    }
 }

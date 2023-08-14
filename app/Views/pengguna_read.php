@@ -27,7 +27,7 @@
         <div class="card card-info card-outline">
             <div class="card-header">
                 <div class="card-tools">
-                    <a href="/PenggunaController/pengguna_create" class="btn btn-success">Tambah Data <i class="fas fa-plus-square"></i></a>
+                    <a href="/PenggunaController/pengguna_create" class="btn btn-primary"><i class="fa fa-plus"></i></a>
                 </div>
             </div>
             <div class="card-body">
@@ -46,7 +46,7 @@
                             <td><?php echo $v['username'] ?></td>
                             <td><?php echo $v['email'] ?></td>
                             <td>
-                                <a href="pengguna_update/<?php echo $v['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a> |
+                                <a href="pengguna_update/<?php echo $v['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                 <a href="pengguna_delete/<?php echo $v['id'] ?>"><i class="fa-solid fa-trash" style="color: red"></i></a>
                             </td>
                         </tr>
