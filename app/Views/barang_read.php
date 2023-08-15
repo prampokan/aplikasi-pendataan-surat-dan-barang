@@ -52,9 +52,9 @@
                             <td><?php echo $v['id_penerima'] ?></td>
                             <td><?php echo $v['status'] ?></td>
                             <td><?php echo $v['catatan'] ?></td>
-                            <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="100"></td>
-                            <td><img src="<?php echo base_url('img/' . $v['foto2']) ?>" width="100"></td>
-                            <td><img src="<?php echo base_url('img/' . $v['foto3']) ?>" width="100"></td>
+                            <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="70"></td>
+                            <td><img src="<?php echo base_url('img/' . $v['foto2']) ?>" width="70"></td>
+                            <td><img src="<?php echo base_url('img/' . $v['foto3']) ?>" width="70"></td>
                             <td>
                                 <a href="barang_update/<?php echo $v['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                 <a href="barang_delete/<?php echo $v['id'] ?>"><i class="fa-solid fa-trash" style="color: red"></i></a>

@@ -1,6 +1,6 @@
 <!-- Preloader -->
 <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="<?php echo base_url('assets') ?>/dist/img/logo_desnet.png" alt="AdminLTELogo" width="100">
+    <img class="animation__shake" src="<?php echo base_url('assets') ?>/dist/img/logo_desnet.png" alt="AdminLTELogo" width="150">
 </div>
 
 <!-- Navbar -->
@@ -142,7 +142,7 @@
 <!-- /.navbar -->
 
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary elevation-3">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link text-center">
         <img src="<?php echo base_url('assets') ?>/dist/img/logo_desnet.png" alt="AdminLTE Logo" style: width="150px">
@@ -177,8 +177,9 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                <li class="nav-item menu-open">
-                    <a href="/Dashboard/index" class="nav-link active">
+                <li class="nav-header">HOME</li>
+                <li class="nav-item">
+                    <a href="/Dashboard/index" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/Dashboard/index') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -188,7 +189,7 @@
 
                 <li class="nav-header">DATAS</li>
                 <li class="nav-item">
-                    <a href="/BarangController/barang_read" class="nav-link">
+                    <a href="/BarangController/barang_read" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/BarangController/barang_read') ? 'active' : ''; ?>">
                         <i class="nav-icon fa-solid fa-box"></i>
                         <p>
                             Data Barang
@@ -204,7 +205,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/PenggunaController/pengguna_read" class="nav-link">
+                    <a href="/PenggunaController/pengguna_read" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/PenggunaController/pengguna_read') ? 'active' : ''; ?>">
                         <i class="nav-icon fa-solid fa-user"></i>
                         <p>
                             Data Pengguna

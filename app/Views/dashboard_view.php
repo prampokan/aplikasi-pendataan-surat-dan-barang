@@ -12,7 +12,7 @@
         <div class="col-sm-6">
           <h1 class="m-0">Dashboard</h1>
         </div><!-- /.col -->
-        <div class="col-sm-6">
+        <div class=" col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active">Dashboard</li>
@@ -29,7 +29,7 @@
       <div class="row">
         <div class="col-lg-3 col-6">
           <!-- small box -->
-          <div class="small-box bg-info">
+          <div class="small-box bg-primary">
             <div class="inner">
               <h3><?php echo $data['total_barang'] ?></h3>
               <p>Data Barang</p>
@@ -87,10 +87,62 @@
         </div>
         <!-- ./col -->
       </div>
+      <div class="d-flex justify-content-between">
+        <div class="card card-info card-outline">
+          <div class="card-body">
+            <h5>Top Data Barang</h5>
+            <table class="table table-bordered">
+              <tr>
+                <th>Nama Barang</th>
+                <th>ID Penerima</th>
+                <th>Status Penerima</th>
+                <th>Foto</th>
+              </tr>
+              <?php
+              foreach ($data['data_barang'] as $k => $v) {
+              ?>
+                <tr>
+                  <td><?php echo $v['nm_barang'] ?></td>
+                  <td><?php echo $v['id_penerima'] ?></td>
+                  <td><?php echo $v['status'] ?></td>
+                  <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="50"></td>
+                </tr>
+              <?php
+              }
+              ?>
+            </table>
+          </div>
+        </div>
+        <div class="card card-info card-outline">
+          <div class="card-body">
+            <h5>Top Data Surat</h5>
+            <table class="table table-bordered">
+              <tr>
+                <th>Nama Barang</th>
+                <th>ID Penerima</th>
+                <th>Status Penerima</th>
+                <th>Foto</th>
+              </tr>
+              <?php
+              foreach ($data['data_barang'] as $k => $v) {
+              ?>
+                <tr>
+                  <td><?php echo $v['nm_barang'] ?></td>
+                  <td><?php echo $v['id_penerima'] ?></td>
+                  <td><?php echo $v['status'] ?></td>
+                  <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="50"></td>
+                </tr>
+              <?php
+              }
+              ?>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
 
 <?php echo $this->endSection() ?>

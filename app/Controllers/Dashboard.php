@@ -14,7 +14,8 @@ class Dashboard extends BaseController
         $data = [
             'title' => "Dashboard",
             'total_pengguna' => $penggunaModel->countTotalPengguna(),
-            'total_barang' => $barangModel->countTotalBarang()
+            'total_barang' => $barangModel->countTotalBarang(),
+            'data_barang' => $barangModel->findAll()
         ];
         return view('dashboard_view', ['data' => $data]);
     }
