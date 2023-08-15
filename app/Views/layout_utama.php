@@ -1,78 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Desnet | <?php echo $data['title'] ?></title>
-    <meta charset="utf-8">
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/fontawesome-free/css/all.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/jqvmap/jqvmap.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/dist/css/adminlte.min.css">
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="<?php echo base_url('assets'); ?>/plugins/summernote/summernote-bs4.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Multipurpose Admin & Dashboard Template">
+    <meta name="author" content="Themesbrand">
+    <title>Desnet | <?php echo ($data['title']) ?></title>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="<?= base_url('assets/admin/images/favicon.ico') ?>">
+    <!-- jsvectormap css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/libs/jsvectormap/css/jsvectormap.min.css') ?>">
+    <!-- Sweet Alert css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/libs/sweetalert2/sweetalert2.min.css') ?>">
+    <!-- Swiper slider css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/libs/swiper/swiper-bundle.min.css') ?>">
+    <!-- Layout config Js -->
+    <script src="<?= base_url('assets/admin/js/layout.js') ?>"></script>
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/css/bootstrap.min.css') ?>">
+    <!-- Icons Css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/css/icons.min.css') ?>">
+    <!-- App Css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/css/app.min.css') ?>">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/css/custom.min.css') ?>">
+    <!-- Dropzone css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/libs/dropzone/dropzone.css') ?>">
+    <!-- Filepond css -->
+    <link rel="stylesheet" href="<?= base_url('assets/admin/libs/filepond/filepond.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/admin/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css') ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-<body class=" hold-transition sidebar-mini layout-fixed">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Uncial+Antiqua&display=swap');
-    </style>
-    <div class="wrapper">
-        <?php echo $this->include('admin_header') ?>
-        <?php echo $this->renderSection('konten_utama') ?>
-        <?php echo $this->include('admin_footer') ?>
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <?php echo $this->include('header') ?>
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <?php echo $this->include('sidebar') ?>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <?php echo $this->renderSection('konten_utama') ?>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <?= date('Y') ?> Data Management | PT. Desnet Human Technology
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
     </div>
-    <!-- ./wrapper -->
+    <!-- END layout-wrapper -->
 
-    <script src="<?php echo base_url('assets'); ?>/plugins/jquery/jquery.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button);
-    </script>
-    <!-- Bootstrap 4 -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- ChartJS -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/chart.js/Chart.min.js"></script>
-    <!-- Sparkline -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/sparklines/sparkline.js"></script>
-    <!-- JQVMap -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="<?php echo base_url('assets'); ?>/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
-    <!-- daterangepicker -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/moment/moment.min.js"></script>
-    <script src="<?php echo base_url('assets'); ?>/plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Summernote -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/summernote/summernote-bs4.min.js"></script>
-    <!-- overlayScrollbars -->
-    <script src="<?php echo base_url('assets'); ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="<?php echo base_url('assets'); ?>/dist/js/adminlte.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="<?php echo base_url('assets'); ?>/dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="<?php echo base_url('assets'); ?>/dist/js/pages/dashboard.js"></script>
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="customizer-setting d-none d-md-block">
+        <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
+        </div>
+    </div> -->
+
+    <!-- JAVASCRIPT -->
+    <script src="<?= base_url('assets/admin/libs/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/simplebar/simplebar.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/node-waves/waves.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/feather-icons/feather.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/js/pages/plugins/lord-icon-2.1.0.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/js/plugins.js') ?>"></script>
+
+    <!-- prismjs plugin -->
+    <script src="<?= base_url('assets/admin/libs/prismjs/prism.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/list.js/list.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/list.pagination.js/list.pagination.min.js') ?>"></script>
+
+    <!-- listjs init -->
+    <script src="<?= base_url('assets/admin/js/pages/listjs.init.js') ?>"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="<?= base_url('assets/admin/libs/sweetalert2/sweetalert2.min.js') ?>"></script>
+
+    <!-- apexcharts -->
+    <script src="<?= base_url('assets/admin/libs/apexcharts/apexcharts.min.js') ?>"></script>
+
+    <!-- Vector map-->
+    <script src="<?= base_url('assets/admin/libs/jsvectormap/js/jsvectormap.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/jsvectormap/maps/world-merc.js') ?>"></script>
+
+    <!-- Swiper slider js-->
+    <script src="<?= base_url('assets/admin/libs/swiper/swiper-bundle.min.js') ?>"></script>
+
+    <!-- Dashboard init -->
+    <script src="<?= base_url('assets/admin/js/pages/dashboard-ecommerce.init.js') ?>"></script>
+
+    <!-- dropzone min -->
+    <script src="<?= base_url('assets/admin/libs/dropzone/dropzone-min.js') ?>"></script>
+
+    <!-- filepond js -->
+    <script src="<?= base_url('assets/admin/libs/filepond/filepond.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js') ?>"></script>
+    <script src="<?= base_url('assets/admin/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js') ?>"></script>
+
+    <script src="<?= base_url('assets/admin/js/pages/form-file-upload.init.js') ?>"></script>
+
+    <!-- App js -->
+    <script src="<?= base_url('assets/admin/js/app.js') ?>"></script>
 
 </body>
 
