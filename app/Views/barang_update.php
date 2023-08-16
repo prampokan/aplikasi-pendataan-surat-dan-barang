@@ -62,7 +62,7 @@
                                         <input type="file" class="form-control" name="foto3" id="foto3"></input>
                                     </div>
                                     <div class="card-footer">
-                                        <button name="simpan" class="btn btn-success">Simpan Data</button>
+                                        <button name="simpan" class="btn btn-primary">Simpan Data</button>
                                     </div>
                                 </div>
                             </form>

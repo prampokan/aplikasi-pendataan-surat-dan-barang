@@ -8,7 +8,7 @@
     <meta name="author" content="Themesbrand">
     <title>Desnet | <?php echo ($data['title']) ?></title>
     <!-- App favicon -->
-    <link rel="shortcut icon" href="<?= base_url('assets/admin/images/favicon.ico') ?>">
+    <link rel="shortcut icon" href="<?= base_url('assets/dist/img/logo_desnet2.webp') ?>">
     <!-- jsvectormap css -->
     <link rel="stylesheet" href="<?= base_url('assets/admin/libs/jsvectormap/css/jsvectormap.min.css') ?>">
     <!-- Sweet Alert css -->
