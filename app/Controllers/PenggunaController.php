@@ -50,10 +50,9 @@ class PenggunaController extends BaseController
         $penggunaModel = new ModelPengguna();
         $data = [
             'title' => "Data Pengguna",
-            'data_pengguna' => $penggunaModel->findAll(),
+            'data_pengguna' => $penggunaModel->paginate(10),
+            'pager' => $penggunaModel->pager,
         ];
-        // $data['title'] = "Data Pengguna";
-        // $data['data_pengguna'] = $penggunaModel->findAll();
         echo view("pengguna_read", ['data' => $data]);
     }
 

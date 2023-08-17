@@ -159,3 +159,163 @@ in APPPATH\Views\barang_update.php on line 31.
 INFO - 2023-08-17 06:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-08-17 10:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-08-17 10:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:29:30 --> Call to a member function getNumPages() on array
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 4 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:33:16 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+in APPPATH\Controllers\PenggunaController.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:33:44 --> Call to a member function getNumPages() on array
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 4 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:36:52 --> Undefined variable $dataUser
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 APPPATH\Views\pengguna_read.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataUser', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:39:40 --> Undefined variable $dataUser
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 APPPATH\Views\pengguna_read.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataUser', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:39:53 --> Undefined variable $pengguna_read
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 APPPATH\Views\pengguna_read.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengguna_read', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:40:08 --> Undefined variable $data_pengguna
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 APPPATH\Views\pengguna_read.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(57): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:40:55 --> Undefined variable $data_pengguna
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 APPPATH\Views\pengguna_read.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_pengguna', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 76)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(55): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:48:41 --> Call to a member function getNumPages() on array
+in APPPATH\Views\pengguna_read.php on line 76.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 4 APPPATH\Controllers\PenggunaController.php(56): view('pengguna_read', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 12:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:55:25 --> Undefined variable $pager
+in APPPATH\Views\pengguna_read.php on line 74.
+ 1 APPPATH\Views\pengguna_read.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 74)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(56): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:57:19 --> Undefined variable $pager
+in APPPATH\Views\pengguna_read.php on line 74.
+ 1 APPPATH\Views\pengguna_read.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 74)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(56): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-17 12:57:27 --> Undefined variable $pager
+in APPPATH\Views\pengguna_read.php on line 74.
+ 1 APPPATH\Views\pengguna_read.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php', 74)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\app\\Views\\pengguna_read.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pengguna_read', [], true)
+ 5 APPPATH\Controllers\PenggunaController.php(56): view('pengguna_read', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PenggunaController->pengguna_read()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenggunaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Aplikasi-Pendataan-Kiriman-Surat-dan-Barang\\public\\index.php')
+INFO - 2023-08-17 12:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 13:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 13:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-17 13:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
