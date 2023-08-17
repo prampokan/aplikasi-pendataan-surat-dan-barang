@@ -47,7 +47,7 @@
                                             <th>Foto Pertama</th>
                                             <th>Foto Kedua</th>
                                             <th>Foto Ketiga</th>
-                                            <th style="width:70px;">Aksi</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody class="list form-check-all">
@@ -64,8 +64,9 @@
                                                 <td><img src="<?php echo base_url('img/' . $v['foto2']) ?>" width="70"></td>
                                                 <td><img src="<?php echo base_url('img/' . $v['foto3']) ?>" width="70"></td>
                                                 <td>
+                                                    <a href="#"><i class="fa-solid fa-bars text-success"></i></a>
                                                     <a href="barang_update/<?php echo $v['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="barang_delete/<?php echo $v['id'] ?>"><i class="fa-solid fa-trash" style="color: red"></i></a>
+                                                    <a href="barang_delete/<?php echo $v['id'] ?>"><i class="fa-solid fa-trash text-danger"></i></a>
                                                 </td>
                                             </tr>
                                         <?php
