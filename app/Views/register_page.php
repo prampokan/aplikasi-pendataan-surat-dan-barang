@@ -24,8 +24,7 @@
 
                     <div class="card-body p-4">
                         <div class="text-center mt-2">
-                            <h5 class="text-primary">Welcome Back !</h5>
-                            <p class="text-muted">Silahkan Masukkan Username dan Password</p>
+                            <h5 class="text-primary">Halaman Register</h5>
                         </div>
 
                         <!-- Alerts-->
