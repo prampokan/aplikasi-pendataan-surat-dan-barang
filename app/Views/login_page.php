@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="text-center mt-sm-5 mb-4 text-white-50">
+                <div class="text-center mb-3 text-white-50">
                     <div>
                         <a href="#" class="d-inline-block auth-logo">
                             <img src="<?= base_url('assets/dist/img/logo_desnet.png') ?>" alt="" height="60">

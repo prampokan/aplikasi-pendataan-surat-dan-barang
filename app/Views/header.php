@@ -68,16 +68,16 @@
                         <span class="d-flex align-items-center">
                             <img class="rounded-circle header-profile-user" src="<?= base_url('assets/admin/images/users/avatar-1.jpg') ?>" alt="Header Avatar">
                             <span class="text-start ms-xl-2">
-                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Admin Desnet</span>
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text text-capitalize"><?= session()->get('user_name') ?></span>
                                 <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Super Admin</span>
                             </span>
                         </span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
                         <!-- item-->
-                        <h6 class="dropdown-header">Welcome Admin Desnet!</h6>
-                        <a class="dropdown-item" href="{{ url('admin/profile') }}"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
-                        <a class="dropdown-item" href="{{ url('logout') }}"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                        <h6 class="dropdown-header text-capitalize">welcome <?= session()->get('user_name') ?>!</h6>
+                        <a class="dropdown-item" href="<?= base_url("/PenggunaController/pengguna_update"); ?>"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <a class="dropdown-item" href="/LoginController/logout"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                     </div>
                 </div>
             </div>
