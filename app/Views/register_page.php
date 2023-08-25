@@ -72,7 +72,7 @@
                 <!-- end card -->
 
                 <div class="mt-4 text-center">
-                    <p class="mb-0">Sudah punya akun ? <a href="/LoginController/login" class="fw-semibold text-primary text-decoration-underline"> Login! </a> </p>
+                    <p class="mb-0">Sudah punya akun ? <a href="<?= base_url('/'); ?>" class="fw-semibold text-primary text-decoration-underline"> Login! </a> </p>
                 </div>
 
             </div>

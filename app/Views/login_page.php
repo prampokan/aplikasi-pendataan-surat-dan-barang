@@ -65,7 +65,7 @@
                 <!-- end card -->
 
                 <div class="mt-4 text-center">
-                    <p class="mb-0">Belum Punya Akun ? <a href="/RegisterController/register" class="fw-semibold text-primary text-decoration-underline"> Daftar! </a> </p>
+                    <p class="mb-0">Belum Punya Akun ? <a href="<?= base_url('register'); ?>" class="fw-semibold text-primary text-decoration-underline"> Daftar! </a> </p>
                 </div>
 
             </div>

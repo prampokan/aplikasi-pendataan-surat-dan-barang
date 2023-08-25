@@ -13,7 +13,7 @@
                                 <h5 class="card-title">Tambah Data Barang</h5>
                             </div>
                             <div class="col-lg-6 d-flex justify-content-end">
-                                <a href="/BarangController/barang_read" class="btn btn-sm btn-success">Kembali</a>
+                                <a href="<?= base_url('barang_read'); ?>" class="btn btn-sm btn-success">Kembali</a>
                             </div>
                         </div>
                     </div>

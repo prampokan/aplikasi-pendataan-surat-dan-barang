@@ -51,7 +51,7 @@ class PenggunaController extends BaseController
         $data = [
             'title' => "Data Pengguna",
             'data_pengguna' => $penggunaModel->paginate(10),
-            'pager' => $penggunaModel->pager,
+
         ];
         echo view("pengguna_read", ['data' => $data]);
     }
@@ -98,9 +98,9 @@ class PenggunaController extends BaseController
     public function pengguna_delete($id)
     {
         $data['title'] = "Data Pengguna";
-        echo view("pengguna_read", ['data' => $data]);
         $penggunaModel = new ModelPengguna();
         $penggunaModel->delete($id);
-        return redirect()->to('/PenggunaController/pengguna_read')->with('success', 'Data pengguna berhasil dihapus.');
+        echo view("pengguna_create", ['data' => $data]);
+        return redirect()->to('PenggunaController/pengguna_read')->with('success', 'Data pengguna berhasil dihapus.');
     }
 }

@@ -31,7 +31,7 @@
         <ul class="navbar-nav" id="navbar-nav">
             <li class="menu-title"><span data-key="t-menu">Menu</span></li>
             <li class="nav-item">
-                <a class="nav-link menu-link" href="/Dashboard/index">
+                <a class="nav-link menu-link" href="<?= base_url('dashboard'); ?>">
                     <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboards</span>
                 </a>
             </li> <!-- end Dashboard Menu -->
@@ -39,7 +39,7 @@
             <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-pages">Master Data</span></li>
 
             <li class="nav-item">
-                <a class="nav-link menu-link" href="/PenggunaController/pengguna_read">
+                <a class="nav-link menu-link" href="<?= base_url('pengguna_read'); ?>">
                     <i class="las la-user"></i> <span data-key="t-authentication">Data Pengguna</span>
                 </a>
             </li>
@@ -53,7 +53,7 @@
             <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-pages">Orders</span></li>
 
             <li class="nav-item">
-                <a class="nav-link menu-link" href="/BarangController/barang_read">
+                <a class="nav-link menu-link" href="<?= base_url('barang_read'); ?>">
                     <i class="las la-box"></i> <span data-key="t-authentication">Data Barang</span>
                 </a>
             </li>

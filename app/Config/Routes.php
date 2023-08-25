@@ -29,7 +29,26 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
+$routes->get('/', 'LoginController::login');
+$routes->post('/', 'LoginController::login');
+$routes->get('/LoginController/logout', 'LoginController::logout');
+$routes->get('/register', 'RegisterController::register');
+$routes->post('/register', 'RegisterController::register');
+$routes->get('/dashboard', 'Dashboard::index');
+$routes->get('/pengguna_create', 'PenggunaController::pengguna_create');
+$routes->post('/pengguna_create', 'PenggunaController::pengguna_create');
+$routes->get('/pengguna_read', 'PenggunaController::pengguna_read');
+$routes->get('/pengguna_update/(:num)', 'PenggunaController::pengguna_update/$1');
+$routes->post('/pengguna_update/(:num)', 'PenggunaController::pengguna_update/$1');
+$routes->get('/pengguna_delete/(:num)', 'PenggunaController::pengguna_delete/$1');
+$routes->get('/barang_create', 'BarangController::barang_create');
+$routes->post('/barang_create', 'BarangController::barang_create');
+$routes->get('/barang_read', 'BarangController::barang_read');
+$routes->get('/barang_update/(:num)', 'BarangController::barang_update/$1');
+$routes->post('/barang_update/(:num)', 'BarangController::barang_update/$1');
+$routes->get('/barang_delete/(:num)', 'BarangController::barang_delete/$1');
+
 
 /*
  * --------------------------------------------------------------------

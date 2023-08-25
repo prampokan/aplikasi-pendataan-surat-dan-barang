@@ -13,7 +13,7 @@
                                 <h5 class="card-title">Tambah Data Pengguna</h5>
                             </div>
                             <div class="col-lg-6 d-flex justify-content-end">
-                                <a href="/PenggunaController/pengguna_read" class="btn btn-sm btn-success">Kembali</a>
+                                <a href="<?= base_url('pengguna_read'); ?>" class="btn btn-sm btn-success">Kembali</a>
                             </div>
                         </div>
                     </div>

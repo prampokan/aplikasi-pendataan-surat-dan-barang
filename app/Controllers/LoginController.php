@@ -28,7 +28,7 @@ class LoginController extends BaseController
                     session()->setFlashdata('success', 'Login berhasil!');
 
                     // Ganti "DashboardController" dengan controller yang sesuai untuk redirect setelah login berhasil
-                    return redirect()->to('/Dashboard/index');
+                    return redirect()->to('/dashboard');
                 } else {
                     $errorMessages[] = "Username atau password salah.";
                 }
@@ -41,7 +41,7 @@ class LoginController extends BaseController
     public function logout()
     {
         // Lakukan tindakan sesuai kebutuhan saat logout
-        session()->remove('user_id');
-        return redirect()->to('/LoginController/login');
+        session()->destroy('id');
+        return redirect()->to('/');
     }
 }

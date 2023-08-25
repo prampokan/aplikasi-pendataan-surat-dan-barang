@@ -21,7 +21,7 @@
                             <div class="row g-4 mb-3">
                                 <div class="col-sm-auto">
                                     <div>
-                                        <a href="/PenggunaController/pengguna_create" type="button" class="btn btn-info add-btn">
+                                        <a href="<?= base_url('pengguna_create'); ?>" type="button" class="btn btn-info add-btn">
                                             <i class="fa-solid fa-file-circle-plus"></i>
                                         </a>
                                     </div>
