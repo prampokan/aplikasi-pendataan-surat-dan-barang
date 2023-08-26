@@ -68,7 +68,7 @@ class BarangController extends BaseController
         $barangModel = new ModelBarang();
         $data = [
             'title' => "Data Barang",
-            'data_barang' => $barangModel->findAll(),
+            'data_barang' => $barangModel->getBarangWithKaryawan(),
         ];
         echo view("barang_read", ['data' => $data]);
     }
@@ -135,5 +135,48 @@ class BarangController extends BaseController
         $barangModel->delete($id);
         echo view("barang_create", ['data' => $data]);
         return redirect()->to('/BarangController/barang_read')->with('success', 'Data barang berhasil dihapus.');
+    }
+
+    public function barang_detail($id)
+    {
+        $barangModel = new ModelBarang();
+        $data_barang = $barangModel->getBarangWithKaryawanById($id);
+
+        if (!$data_barang) {
+            return redirect()->to('/BarangController/barang_read')->with('error', 'Data barang tidak ditemukan.');
+        }
+
+        $data['title'] = "Detail Barang";
+        return view("barang_detail", ['data_barang' => $data_barang, 'data' => $data]);
+    }
+
+    public function barang_status($id)
+    {
+        $barangModel = new ModelBarang();
+        $errorMessages = [];
+
+        if ($this->request->getMethod() == 'post') {
+            $status = $this->request->getPost('status');
+
+            if (empty($status)) {
+                $errorMessages[] = "Kolom harus diisi.";
+            }
+
+            if (empty($errorMessages)) {
+                $data_barang = [
+                    'id' => $id,
+                    'status' => $status,
+                ];
+
+                $barangModel->update($id, $data_barang);
+
+                session()->setFlashdata('success', 'Update data berhasil!');
+
+                return redirect()->to('/BarangController/barang_read');
+            }
+        }
+        $data['title'] = "Data Barang";
+        $data_barang = $barangModel->find($id);
+        return view("barang_status", ['errorMessages' => $errorMessages, 'data_barang' => $data_barang, 'data' => $data]);
     }
 }

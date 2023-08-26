@@ -40,7 +40,10 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Status</label>
-                                        <input value="<?php echo $data_barang['status'] ?>" type="text" class="form-control" name="status"></input>
+                                        <select class="form-select mb-3" name="status" aria-label="Default select example">
+                                            <option value="1">Belum Diterima</option>
+                                            <option value="2">Sudah Diterima</option>
+                                        </select>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Catatan</label>

@@ -48,6 +48,9 @@ $routes->get('/barang_read', 'BarangController::barang_read');
 $routes->get('/barang_update/(:num)', 'BarangController::barang_update/$1');
 $routes->post('/barang_update/(:num)', 'BarangController::barang_update/$1');
 $routes->get('/barang_delete/(:num)', 'BarangController::barang_delete/$1');
+$routes->get('/barang_detail/(:num)', 'BarangController::barang_detail/$1');
+$routes->get('/barang_status/(:num)', 'BarangController::barang_status/$1');
+$routes->post('/barang_status/(:num)', 'BarangController::barang_status/$1');
 
 
 /*

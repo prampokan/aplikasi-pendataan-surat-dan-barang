@@ -10,7 +10,7 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-lg-6">
-                                <h5 class="card-title">Tambah Data Barang</h5>
+                                <h5 class="card-title">Detail Data Barang</h5>
                             </div>
                             <div class="col-lg-6 d-flex justify-content-end">
                                 <a href="<?= base_url('barang_read'); ?>" class="btn btn-sm btn-success">Kembali</a>
@@ -27,42 +27,48 @@
                             <form action="" method="POST" enctype="multipart/form-data">
                                 <div class="row">
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Nomor Resi</label>
-                                        <input type="text" class="form-control" name="no_resi"></input>
+                                        <label for="firstNameinput" class="form-label">Nama Barang</label>
+                                        <input value="<?php echo esc($data_barang['nm_barang']) ?>" type="text" class="form-control" name="nm_barang" disabled></input>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Nama Barang</label>
-                                        <input type="text" class="form-control" name="nm_barang"></input>
+                                        <label for="firstNameinput" class="form-label">Nomor Resi</label>
+                                        <input value="<?php echo $data_barang['no_resi'] ?>" type="text" class="form-control" name="no_resi" disabled></input>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">ID Penerima</label>
-                                        <input type="text" class="form-control" name="id_penerima"></input>
+                                        <input value="<?php echo $data_barang['id_penerima'] ?>" type="text" class="form-control"" name=" id_penerima" disabled></input>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Status</label>
-                                        <select class="form-select mb-3" name="status" aria-label="Default select example">
-                                            <option value="1">Belum Diterima</option>
-                                            <option value="2">Sudah Diterima</option>
-                                        </select>
+                                        <label for="firstNameinput" class="form-label">Nama Penerima</label>
+                                        <input value="<?php echo $data_barang['nama_penerima'] ?>" type="text" class="form-control"" name=" id_penerima" disabled></input>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="firstNameinput" class="form-label">Email Penerima</label>
+                                        <input value="<?php echo $data_barang['email_penerima'] ?>" type="text" class="form-control"" name=" id_penerima" disabled></input>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="firstNameinput" class="form-label">Status</label><br>
+                                        <?php if ($data_barang['status'] == 1) : ?>
+                                            <span class="badge text-bg-success">Belum Diterima</span>
+                                        <?php elseif ($data_barang['status'] == 2) : ?>
+                                            <span class="badge text-bg-info">Sudah Diterima</span>
+                                        <?php endif; ?>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Catatan</label>
-                                        <input type="text" class="form-control" name="catatan"></input>
+                                        <input value="<?php echo $data_barang['catatan'] ?>" type="text" class="form-control" name="catatan" disabled></input>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Foto Pertama</label>
-                                        <input type="file" class="form-control" name="foto1" id="foto1"></input>
+                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto1']) ?>" width="100" class="mb-3" disabled></div>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Foto Kedua</label>
-                                        <input type="file" class="form-control" name="foto2" id="foto2"></input>
+                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto2']) ?>" width="100" class="mb-3" disabled></div>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Foto Ketiga</label>
-                                        <input type="file" class="form-control" name="foto3" id="foto3"></input>
-                                    </div>
-                                    <div class="card-footer">
-                                        <button type="submit" name="simpan" class="btn btn-primary">Simpan Data</button>
+                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto3']) ?>" width="100" class="mb-3" disabled></div>
                                     </div>
                                 </div>
                             </form>

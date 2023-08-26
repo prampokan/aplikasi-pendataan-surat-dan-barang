@@ -13,7 +13,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title mb-0">Data Barang</h4>
+                        <h4 class="card-title mb-0">Data Karyawan</h4>
                     </div><!-- end card header -->
 
                     <div class="card-body">
@@ -21,7 +21,7 @@
                             <div class="row g-4 mb-3">
                                 <div class="col-sm-auto">
                                     <div>
-                                        <a href="<?= base_url('barang_create'); ?>" type="button" class="btn btn-info add-btn">
+                                        <a href="<?= base_url('karyawan_create'); ?>" type="button" class="btn btn-info add-btn">
                                             <i class="fa-solid fa-file-circle-plus"></i>
                                         </a>
                                     </div>
@@ -39,39 +39,23 @@
                                 <table class="table align-middle table-nowrap" id="customerTable">
                                     <thead class="table-light">
                                         <tr>
-                                            <th>Barang</th>
-                                            <th>Nama Penerima</th>
-                                            <th>Email Penerima</th>
-                                            <th>NO Resi</th>
-                                            <th>Status</th>
+                                            <th>ID</th>
+                                            <th>Username</th>
+                                            <th>Email</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody class="list form-check-all">
                                         <?php
-                                        foreach ($data['data_barang'] as $k => $v) {
+                                        foreach ($data['data_karyawan'] as $k => $v) {
                                         ?>
                                             <tr>
+                                                <td><?php echo $v['id'] ?></td>
+                                                <td><?php echo $v['username'] ?></td>
+                                                <td><?php echo $v['email'] ?></td>
                                                 <td>
-                                                    <img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="70">
-                                                    <?php echo $v['nm_barang'] ?>
-                                                </td>
-                                                <td><?php echo $v['nama_penerima'] ?></td>
-                                                <td><?php echo $v['email_penerima'] ?></td>
-                                                <td><?php echo $v['no_resi'] ?></td>
-                                                <td>
-                                                    <a href="barang_status/<?php echo $v['id'] ?>">
-                                                        <?php if ($v['status'] == 1) : ?>
-                                                            <span class="badge text-bg-success">Belum Diterima</span>
-                                                        <?php elseif ($v['status'] == 2) : ?>
-                                                            <span class="badge text-bg-info">Sudah Diterima</span>
-                                                        <?php endif; ?>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="barang_detail/<?php echo $v['id'] ?>"><i class="fa-solid fa-circle-info"></i></a>
-                                                    <a href="barang_update/<?php echo $v['id'] ?>" class="mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="barang_delete/<?php echo $v['id'] ?>"><i class="fa-solid fa-trash text-danger"></i></a>
+                                                    <a href="karyawan_update/<?php echo $v['id'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="karyawan_delete/<?php echo $v['id'] ?>"><i class="fa-solid fa-trash" style="color: red"></i></a>
                                                 </td>
                                             </tr>
                                         <?php
@@ -79,7 +63,6 @@
                                         ?>
                                     </tbody>
                                 </table>
-
                                 <!-- <div class="noresult" style="display: none">
                                     <div class="text-center">
                                         <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop" colors="primary:#121331,secondary:#08a88a" style="width:75px;height:75px"></lord-icon>
@@ -90,11 +73,11 @@
                             </div>
                             <div class="d-flex justify-content-end">
                                 <div class="pagination-wrap hstack gap-2">
-                                    <a class="page-item pagination-prev disabled" href="javascrpit:void(0)">
+                                    <a class="page-item pagination-prev disabled" href="#">
                                         Previous
                                     </a>
                                     <ul class="pagination listjs-pagination mb-0"></ul>
-                                    <a class="page-item pagination-next" href="javascrpit:void(0)">
+                                    <a class="page-item pagination-next" href="#">
                                         Next
                                     </a>
                                 </div>

@@ -127,8 +127,8 @@
                   </div>
                   <div class="d-flex align-items-end justify-content-between mt-4">
                     <div>
-                      <h4 class="fs-22 fw-semibold ff-secondary mb-4">321</h4>
-                      <a href="#" class="text-decoration-underline">Lihat semua data</a>
+                      <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo $data['total_karyawan'] ?></h4>
+                      <a href="/KaryawanController/karyawan_read" class="text-decoration-underline">Lihat semua data</a>
                     </div>
                     <div class="avatar-sm flex-shrink-0">
                       <span class="avatar-title bg-soft-info rounded fs-3">
@@ -168,12 +168,12 @@
 
                 <div class="card-body">
                   <div class="table-responsive table-card">
-                    <table class="table table-bordered">
+                    <table class="table align-middle table-nowrap">
                       <thead class="table-light">
                         <tr>
                           <th>Barang</th>
-                          <th>ID Penerima</th>
-                          <th>Status Penerima</th>
+                          <th>Nama Penerima</th>
+                          <th>Status</th>
                         </tr>
                       </thead>
                       <?php
@@ -182,8 +182,14 @@
                         <tr>
                           <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="50">
                             <?php echo $v['nm_barang'] ?></td>
-                          <td><?php echo $v['id_penerima'] ?></td>
-                          <td><?php echo $v['status'] ?></td>
+                          <td><?php echo $v['nama_penerima'] ?></td>
+                          <td>
+                            <?php if ($v['status'] == 1) : ?>
+                              <span class="badge text-bg-success">Belum Diterima</span>
+                            <?php elseif ($v['status'] == 2) : ?>
+                              <span class="badge text-bg-info">Sudah Diterima</span>
+                            <?php endif; ?>
+                          </td>
                         </tr>
                       <?php
                       }
@@ -242,12 +248,12 @@
 
                 <div class="card-body">
                   <div class="table-responsive table-card">
-                    <table class="table table-bordered">
+                    <table class="table align-middle table-nowrap">
                       <thead class="table-light">
                         <tr>
                           <th>Barang</th>
-                          <th>ID Penerima</th>
-                          <th>Status Penerima</th>
+                          <th>Nama Penerima</th>
+                          <th>Status</th>
                         </tr>
                       </thead>
                       <?php
@@ -256,8 +262,14 @@
                         <tr>
                           <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="50">
                             <?php echo $v['nm_barang'] ?></td>
-                          <td><?php echo $v['id_penerima'] ?></td>
-                          <td><?php echo $v['status'] ?></td>
+                          <td><?php echo $v['nama_penerima'] ?></td>
+                          <td>
+                            <?php if ($v['status'] == 1) : ?>
+                              <span class="badge text-bg-success">Belum Diterima</span>
+                            <?php elseif ($v['status'] == 2) : ?>
+                              <span class="badge text-bg-info">Sudah Diterima</span>
+                            <?php endif; ?>
+                          </td>
                         </tr>
                       <?php
                       }

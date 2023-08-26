@@ -45,7 +45,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link menu-link" href="#">
+                <a class="nav-link menu-link" href="/KaryawanController/karyawan_read">
                     <i class="las la-users"></i> <span data-key="t-authentication">Data Karyawan</span>
                 </a>
             </li>
