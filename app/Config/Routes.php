@@ -42,6 +42,8 @@ $routes->get('/pengguna_read', 'PenggunaController::pengguna_read');
 $routes->get('/pengguna_update/(:num)', 'PenggunaController::pengguna_update/$1');
 $routes->post('/pengguna_update/(:num)', 'PenggunaController::pengguna_update/$1');
 $routes->get('/pengguna_delete/(:num)', 'PenggunaController::pengguna_delete/$1');
+$routes->get('/pengguna_password/(:num)', 'PenggunaController::pengguna_password/$1');
+$routes->post('/pengguna_password/(:num)', 'PenggunaController::pengguna_password/$1');
 $routes->get('/barang_create', 'BarangController::barang_create');
 $routes->post('/barang_create', 'BarangController::barang_create');
 $routes->get('/barang_read', 'BarangController::barang_read');
@@ -51,6 +53,21 @@ $routes->get('/barang_delete/(:num)', 'BarangController::barang_delete/$1');
 $routes->get('/barang_detail/(:num)', 'BarangController::barang_detail/$1');
 $routes->get('/barang_status/(:num)', 'BarangController::barang_status/$1');
 $routes->post('/barang_status/(:num)', 'BarangController::barang_status/$1');
+$routes->get('/karyawan_create', 'KaryawanController::karyawan_create');
+$routes->post('/karyawan_create', 'KaryawanController::karyawan_create');
+$routes->get('/karyawan_read', 'KaryawanController::karyawan_read');
+$routes->get('/karyawan_update/(:num)', 'KaryawanController::karyawan_update/$1');
+$routes->post('/karyawan_update/(:num)', 'KaryawanController::karyawan_update/$1');
+$routes->get('/karyawan_delete/(:num)', 'KaryawanController::karyawan_delete/$1');
+$routes->get('/surat_create', 'SuratController::surat_create');
+$routes->post('/surat_create', 'SuratController::surat_create');
+$routes->get('/surat_read', 'SuratController::surat_read');
+$routes->get('/surat_update/(:num)', 'SuratController::surat_update/$1');
+$routes->post('/surat_update/(:num)', 'SuratController::surat_update/$1');
+$routes->get('/surat_delete/(:num)', 'SuratController::surat_delete/$1');
+$routes->get('/surat_detail/(:num)', 'SuratController::surat_detail/$1');
+$routes->get('/surat_status/(:num)', 'SuratController::surat_status/$1');
+$routes->post('/surat_status/(:num)', 'SuratController::surat_status/$1');
 
 
 /*

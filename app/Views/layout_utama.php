@@ -29,10 +29,11 @@
     <link rel="stylesheet" href="<?= base_url('assets/admin/libs/dropzone/dropzone.css') ?>">
     <!-- Filepond css -->
     <link rel="stylesheet" href="<?= base_url('assets/admin/libs/filepond/filepond.min.css') ?>">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
     <link rel="stylesheet" href="<?= base_url('assets/admin/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -55,7 +56,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            <?= date('Y') ?> Data Management | PT. Desnet Human Technology
+                            <?= date('Y') ?> Data Management | PT. Des Teknologi Informasi
                         </div>
                     </div>
                 </div>
@@ -82,17 +83,19 @@
 
     <!-- <div class="customizer-setting d-none d-md-block">
         <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
-            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
-        </div>
+            <i class=' mdi mdi-spin mdi-cog-outline fs-22'></i>
+    </div>
     </div> -->
-
     <!-- JAVASCRIPT -->
+
     <script src="<?= base_url('assets/admin/libs/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('assets/admin/libs/simplebar/simplebar.min.js') ?>"></script>
     <script src="<?= base_url('assets/admin/libs/node-waves/waves.min.js') ?>"></script>
     <script src="<?= base_url('assets/admin/libs/feather-icons/feather.min.js') ?>"></script>
     <script src="<?= base_url('assets/admin/js/pages/plugins/lord-icon-2.1.0.js') ?>"></script>
     <script src="<?= base_url('assets/admin/js/plugins.js') ?>"></script>
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 
     <!-- prismjs plugin -->
     <script src="<?= base_url('assets/admin/libs/prismjs/prism.js') ?>"></script>
@@ -129,10 +132,13 @@
     <script src="<?= base_url('assets/admin/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js') ?>"></script>
 
     <script src="<?= base_url('assets/admin/js/pages/form-file-upload.init.js') ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- App js -->
     <script src="<?= base_url('assets/admin/js/app.js') ?>"></script>
 
+    <?php echo $this->renderSection('script_table') ?>
+    <?php echo $this->renderSection('select2') ?>
 </body>
 
 </html>

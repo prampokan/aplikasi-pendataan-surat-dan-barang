@@ -12,35 +12,25 @@
             <?php endif; ?>
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title mb-0">Data Karyawan</h4>
+                    <div class="card-header d-flex">
+                        <h4 class="card-title mt-2">Data Karyawan</h4>
+                        <div class="col-sm-auto ms-auto">
+                            <div>
+                                <a href="<?= base_url('karyawan_create'); ?>" type="button" class="btn btn-info add-btn">
+                                    <i class="fa-solid fa-file-circle-plus"></i> Tambah Data
+                                </a>
+                            </div>
+                        </div>
                     </div><!-- end card header -->
 
                     <div class="card-body">
                         <div class="listjs-table" id="customerList">
-                            <div class="row g-4 mb-3">
-                                <div class="col-sm-auto">
-                                    <div>
-                                        <a href="<?= base_url('karyawan_create'); ?>" type="button" class="btn btn-info add-btn">
-                                            <i class="fa-solid fa-file-circle-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="d-flex justify-content-sm-end">
-                                        <div class="search-box ms-2">
-                                            <input type="text" class="form-control search" placeholder="Search...">
-                                            <i class="ri-search-line search-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-responsive table-card mt-3 mb-1">
-                                <table class="table align-middle table-nowrap" id="customerTable">
+                            <div class="table-responsive mt-3 mb-1">
+                                <table class="table align-middle table-nowrap" id="customerTableKaryawan">
                                     <thead class="table-light">
                                         <tr>
                                             <th>ID</th>
-                                            <th>Username</th>
+                                            <th>Nama</th>
                                             <th>Email</th>
                                             <th>Aksi</th>
                                         </tr>
@@ -70,8 +60,10 @@
                                         <p class="text-muted mb-0">We've searched more than 150+ Orders We did not find any orders for you search.</p>
                                     </div>
                                 </div> -->
+
+
                             </div>
-                            <div class="d-flex justify-content-end">
+                            <!-- <div class="d-flex justify-content-end">
                                 <div class="pagination-wrap hstack gap-2">
                                     <a class="page-item pagination-prev disabled" href="#">
                                         Previous
@@ -81,7 +73,7 @@
                                         Next
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -89,5 +81,13 @@
         </div>
     </div>
 </div>
+
+<?php echo $this->section('script_table') ?>
+<script>
+    $(document).ready(function() {
+        $('#customerTableKaryawan').DataTable();
+    });
+</script>
+<?php echo $this->endSection() ?>
 
 <?php echo $this->endSection() ?>

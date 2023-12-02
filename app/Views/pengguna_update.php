@@ -27,15 +27,15 @@
                             <form action="" method="POST">
                                 <div class="row">
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Name</label>
+                                        <label for="firstNameinput" class="form-label">Nama</label>
                                         <input value="<?php echo $data_pengguna['name'] ?>" type="text" class="form-control" name="name">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Name</label>
+                                        <label for="firstNameinput" class="form-label">Username</label>
                                         <input value="<?php echo $data_pengguna['username'] ?>" class="form-control" name="username">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Name</label>
+                                        <label for="firstNameinput" class="form-label">Email</label>
                                         <input value="<?php echo $data_pengguna['email'] ?>" class="form-control" name="email">
                                     </div>
                                     <div class="card-footer">

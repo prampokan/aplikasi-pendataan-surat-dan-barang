@@ -35,8 +35,8 @@
                                         <input type="text" class="form-control" name="nm_barang"></input>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">ID Penerima</label>
-                                        <input type="text" class="form-control" name="id_penerima"></input>
+                                        <label for="firstNameinput" class="form-label">Nama Penerima</label>
+                                        <select class="form-select mb-3" name="id_penerima" aria-label="Default select example" id="barangKaryawan"></select>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Status</label>
@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Catatan</label>
-                                        <input type="text" class="form-control" name="catatan"></input>
+                                        <textarea type="text" class="form-control" name="catatan"></textarea>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Foto Pertama</label>
@@ -73,5 +73,34 @@
         </div>
     </div>
 </div>
+<?php echo $this->section('select2') ?>
+<script>
+    function selectDataKaryawan() {
+        $('#barangKaryawan').select2({
+            minimumInputLength: 3,
+            allowClear: true,
+            placeholder: 'Pilih Karyawan',
+            ajax: {
+                dataType: 'json',
+                url: "<?= base_url('BarangController/selectDataKaryawan') ?>",
+                delay: 500,
+                data: function(params) {
+                    return {
+                        search: params.term
+                    }
+                },
+                processResults: function(data, page) {
+                    return {
+                        results: data
+                    }
+                }
+            }
+        });
+    }
+    $(document).ready(function() {
+        selectDataKaryawan()
+    });
+</script>
+<?php echo $this->endSection() ?>
 
 <?php echo $this->endSection() ?>

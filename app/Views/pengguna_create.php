@@ -27,7 +27,7 @@
                             <form action="" method="POST">
                                 <div class="row">
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Name</label>
+                                        <label for="firstNameinput" class="form-label">Nama</label>
                                         <input type="text" class="form-control" name="name" placeholder="Nama Pengguna"></input>
                                     </div>
                                     <div class="mb-3">

@@ -27,7 +27,7 @@
                             <form action="" method="POST">
                                 <div class="row">
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Username</label>
+                                        <label for="firstNameinput" class="form-label">Nama</label>
                                         <input value="<?php echo $data_karyawan['username'] ?>" class="form-control" name="username">
                                     </div>
                                     <div class="mb-3">

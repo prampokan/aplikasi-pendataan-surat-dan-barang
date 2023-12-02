@@ -5,12 +5,17 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 
 use App\Models\ModelBarang;
+use App\Models\ModelKaryawan;
 
 class BarangController extends BaseController
 {
     public function barang_create()
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $barangModel = new ModelBarang();
+        $karyawanModel = new ModelKaryawan();
         $errorMessages = [];
 
         if ($this->request->getMethod() == 'post') {
@@ -19,6 +24,7 @@ class BarangController extends BaseController
             $id_penerima = $this->request->getPost('id_penerima');
             $status = $this->request->getPost('status');
             $catatan = $this->request->getPost('catatan');
+            $waktu = date('Y-m-d H:i:s');
             $foto1 = $this->request->getFile('foto1');
             $foto2 = $this->request->getFile('foto2');
             $foto3 = $this->request->getFile('foto3');
@@ -45,6 +51,7 @@ class BarangController extends BaseController
                     'id_penerima' => $id_penerima,
                     'status' => $status,
                     'catatan' => $catatan,
+                    'waktu' => $waktu,
                     'foto1' => $foto1->getName(),
                     'foto2' => $foto2->getName(),
                     'foto3' => $foto3->getName(),
@@ -54,10 +61,10 @@ class BarangController extends BaseController
 
                 session()->setFlashdata('success', 'Tambah data berhasil!');
 
-                return redirect()->to('/BarangController/barang_read');
+                return redirect()->to('barang_read');
             }
         }
-
+        $data['data_karyawan'] = $karyawanModel->findAll();
         $data['title'] = "Data Barang";
         return view("barang_create", ['errorMessages' => $errorMessages, 'data' => $data]);
     }
@@ -65,17 +72,26 @@ class BarangController extends BaseController
 
     public function barang_read()
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $barangModel = new ModelBarang();
+
         $data = [
             'title' => "Data Barang",
             'data_barang' => $barangModel->getBarangWithKaryawan(),
         ];
+
         echo view("barang_read", ['data' => $data]);
     }
 
     public function barang_update($id)
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $barangModel = new ModelBarang();
+        $karyawanModel = new ModelKaryawan();
         $errorMessages = [];
 
         if ($this->request->getMethod() == 'post') {
@@ -120,30 +136,39 @@ class BarangController extends BaseController
 
                 session()->setFlashdata('success', 'Update data berhasil!');
 
-                return redirect()->to('/BarangController/barang_read');
+                return redirect()->to('barang_read');
             }
         }
         $data['title'] = "Data Barang";
-        $data_barang = $barangModel->find($id);
+        $data['data_karyawan'] = $karyawanModel->findAll();
+        $data_barang = $barangModel->getBarangWithKaryawanById($id);
         return view("barang_update", ['errorMessages' => $errorMessages, 'data_barang' => $data_barang, 'data' => $data]);
     }
 
     public function barang_delete($id)
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
+        $karyawanModel = new ModelKaryawan();
         $data['title'] = "Data Barang";
+        $data['data_karyawan'] = $karyawanModel->findAll();
         $barangModel = new ModelBarang();
         $barangModel->delete($id);
         echo view("barang_create", ['data' => $data]);
-        return redirect()->to('/BarangController/barang_read')->with('success', 'Data barang berhasil dihapus.');
+        return redirect()->to('barang_read')->with('success', 'Data barang berhasil dihapus.');
     }
 
     public function barang_detail($id)
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $barangModel = new ModelBarang();
         $data_barang = $barangModel->getBarangWithKaryawanById($id);
 
         if (!$data_barang) {
-            return redirect()->to('/BarangController/barang_read')->with('error', 'Data barang tidak ditemukan.');
+            return redirect()->to('barang_read')->with('error', 'Data barang tidak ditemukan.');
         }
 
         $data['title'] = "Detail Barang";
@@ -152,6 +177,9 @@ class BarangController extends BaseController
 
     public function barang_status($id)
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $barangModel = new ModelBarang();
         $errorMessages = [];
 
@@ -172,11 +200,36 @@ class BarangController extends BaseController
 
                 session()->setFlashdata('success', 'Update data berhasil!');
 
-                return redirect()->to('/BarangController/barang_read');
+                return redirect()->to('barang_read');
             }
         }
         $data['title'] = "Data Barang";
         $data_barang = $barangModel->find($id);
-        return view("barang_status", ['errorMessages' => $errorMessages, 'data_barang' => $data_barang, 'data' => $data]);
+        return view("barang_read", ['errorMessages' => $errorMessages, 'data_barang' => $data_barang, 'data' => $data]);
+    }
+
+    public function selectDataKaryawan()
+    {
+        $karyawanModel = new ModelKaryawan();
+        if ($this->request->isAJAX()) {
+
+            $caridata = $this->request->getGet('search');
+            $dataKaryawan = $karyawanModel->LIKE('username', $caridata)->get();
+
+            if ($dataKaryawan->getNumRows() > 0) {
+
+                $list = [];
+                $key = 0;
+                foreach ($dataKaryawan->getResultArray() as $row) :
+
+                    $list[$key]['id'] = $row['id'];
+                    $list[$key]['text'] = $row['username'];
+                    $key++;
+
+                endforeach;
+
+                echo json_encode($list);
+            }
+        }
     }
 }

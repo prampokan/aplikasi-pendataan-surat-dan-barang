@@ -8,6 +8,9 @@ class KaryawanController extends BaseController
 {
     public function karyawan_create()
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $karyawanModel = new ModelKaryawan();
         $errorMessages = [];
         $data['title'] = "Data Karyawan";
@@ -34,7 +37,7 @@ class KaryawanController extends BaseController
 
                 session()->setFlashdata('success', 'Tambah data berhasil!');
 
-                return redirect()->to('/KaryawanController/karyawan_read');
+                return redirect()->to('karyawan_read');
             }
         }
 
@@ -43,17 +46,23 @@ class KaryawanController extends BaseController
 
     public function karyawan_read()
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $karyawanModel = new ModelKaryawan();
         $data = [
             'title' => "Data Karyawan",
-            'data_karyawan' => $karyawanModel->paginate(10),
-
+            'data_karyawan' => $karyawanModel->findAll(),
         ];
+
         echo view("karyawan_read", ['data' => $data]);
     }
 
     public function karyawan_update($id)
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $karyawanModel = new ModelKaryawan();
         $errorMessages = [];
         $data['title'] = "Data Karyawan";
@@ -81,7 +90,7 @@ class KaryawanController extends BaseController
 
                 session()->setFlashdata('success', 'Update data berhasil!');
 
-                return redirect()->to('/KaryawanController/karyawan_read');
+                return redirect()->to('karyawan_read');
             }
         }
 
@@ -91,10 +100,13 @@ class KaryawanController extends BaseController
 
     public function karyawan_delete($id)
     {
+        if (!session()->has('user_id')) {
+            return redirect()->to('/');
+        }
         $data['title'] = "Data Karyawan";
         $karyawanModel = new ModelKaryawan();
         $karyawanModel->delete($id);
         echo view("karyawan_create", ['data' => $data]);
-        return redirect()->to('KaryawanController/karyawan_read')->with('success', 'Data karyawan berhasil dihapus.');
+        return redirect()->to('karyawan_read')->with('success', 'Data karyawan berhasil dihapus.');
     }
 }

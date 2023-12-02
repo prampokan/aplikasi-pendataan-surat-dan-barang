@@ -41,7 +41,7 @@
                   <div class="d-flex align-items-end justify-content-between mt-4">
                     <div>
                       <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo $data['total_barang'] ?></h4>
-                      <a href="/BarangController/barang_read" class="text-decoration-underline">Lihat semua data</a>
+                      <a href="<?= base_url('barang_read'); ?>" class="text-decoration-underline">Lihat semua data</a>
                     </div>
                     <div class="avatar-sm flex-shrink-0">
                       <span class="avatar-title bg-soft-primary rounded fs-3">
@@ -69,8 +69,8 @@
                   </div>
                   <div class="d-flex align-items-end justify-content-between mt-4">
                     <div>
-                      <h4 class="fs-22 fw-semibold ff-secondary mb-4">123</h4>
-                      <a href="#" class="text-decoration-underline">Lihat semua data</a>
+                      <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo $data['total_surat'] ?></h4>
+                      <a href="<?= base_url('surat_read'); ?>" class="text-decoration-underline">Lihat semua data</a>
                     </div>
                     <div class="avatar-sm flex-shrink-0">
                       <span class="avatar-title bg-soft-warning rounded fs-3">
@@ -99,7 +99,7 @@
                   <div class="d-flex align-items-end justify-content-between mt-4">
                     <div>
                       <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo $data['total_pengguna'] ?></h4>
-                      <a href="/PenggunaController/pengguna_read" class="text-decoration-underline">Lihat semua data</a>
+                      <a href="<?= base_url('pengguna_read'); ?>" class="text-decoration-underline">Lihat semua data</a>
                     </div>
                     <div class="avatar-sm flex-shrink-0">
                       <span class="avatar-title bg-soft-success rounded fs-3">
@@ -128,7 +128,7 @@
                   <div class="d-flex align-items-end justify-content-between mt-4">
                     <div>
                       <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo $data['total_karyawan'] ?></h4>
-                      <a href="/KaryawanController/karyawan_read" class="text-decoration-underline">Lihat semua data</a>
+                      <a href="<?= base_url('karyawan_read'); ?>" class="text-decoration-underline">Lihat semua data</a>
                     </div>
                     <div class="avatar-sm flex-shrink-0">
                       <span class="avatar-title bg-soft-info rounded fs-3">
@@ -148,7 +148,7 @@
               <div class="card">
                 <div class="card-header align-items-center d-flex">
                   <h4 class="card-title mb-0 flex-grow-1">Top Data Barang</h4>
-                  <div class="flex-shrink-0">
+                  <!-- <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                       <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fw-semibold text-uppercase fs-12">Sort by:
@@ -163,7 +163,7 @@
                         <a class="dropdown-item" href="#">Last Month</a>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div><!-- end card header -->
 
                 <div class="card-body">
@@ -180,8 +180,14 @@
                       foreach ($data['data_barang'] as $k => $v) {
                       ?>
                         <tr>
-                          <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="50">
-                            <?php echo $v['nm_barang'] ?></td>
+                          <td>
+                            <?php if (!empty($v['foto1'])) : ?>
+                              <img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="70">
+                            <?php else : ?>
+                              <img src="<?= base_url('assets/dist/img/not-attached.png') ?>" alt="" width="70">
+                            <?php endif; ?>
+                            <?php echo $v['nm_barang'] ?>
+                          </td>
                           <td><?php echo $v['nama_penerima'] ?></td>
                           <td>
                             <?php if ($v['status'] == 1) : ?>
@@ -200,10 +206,10 @@
                   <div class="align-items-center mt-4 pt-2 justify-content-between row text-center text-sm-start">
                     <div class="col-sm">
                       <div class="text-muted">
-                        Showing <span class="fw-semibold">5</span> of <span class="fw-semibold">25</span> Results
+                        Showing <span class="fw-semibold">1</span> to <span class="fw-semibold">10</span> Results
                       </div>
                     </div>
-                    <div class="col-sm-auto  mt-3 mt-sm-0">
+                    <!-- <div class="col-sm-auto  mt-3 mt-sm-0">
                       <ul class="pagination pagination-separated pagination-sm mb-0 justify-content-center">
                         <li class="page-item disabled">
                           <a href="#" class="page-link">←</a>
@@ -221,7 +227,7 @@
                           <a href="#" class="page-link">→</a>
                         </li>
                       </ul>
-                    </div>
+                    </div> -->
                   </div>
 
                 </div>
@@ -232,7 +238,7 @@
               <div class="card card-height-100">
                 <div class="card-header align-items-center d-flex">
                   <h4 class="card-title mb-0 flex-grow-1">Top Data Surat</h4>
-                  <div class="flex-shrink-0">
+                  <!-- <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                       <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="text-muted">Report<i class="mdi mdi-chevron-down ms-1"></i></span>
@@ -243,7 +249,7 @@
                         <a class="dropdown-item" href="#">Import</a>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div><!-- end card header -->
 
                 <div class="card-body">
@@ -251,17 +257,23 @@
                     <table class="table align-middle table-nowrap">
                       <thead class="table-light">
                         <tr>
-                          <th>Barang</th>
+                          <th>Surat</th>
                           <th>Nama Penerima</th>
                           <th>Status</th>
                         </tr>
                       </thead>
                       <?php
-                      foreach ($data['data_barang'] as $k => $v) {
+                      foreach ($data['data_surat'] as $k => $v) {
                       ?>
                         <tr>
-                          <td><img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="50">
-                            <?php echo $v['nm_barang'] ?></td>
+                          <td>
+                            <?php if (!empty($v['foto1'])) : ?>
+                              <img src="<?php echo base_url('img/' . $v['foto1']) ?>" width="70">
+                            <?php else : ?>
+                              <img src="<?= base_url('assets/dist/img/not-attached.png') ?>" alt="" width="70">
+                            <?php endif; ?>
+                            <?php echo $v['nm_surat'] ?>
+                          </td>
                           <td><?php echo $v['nama_penerima'] ?></td>
                           <td>
                             <?php if ($v['status'] == 1) : ?>
@@ -280,10 +292,10 @@
                   <div class="align-items-center mt-4 pt-2 justify-content-between row text-center text-sm-start">
                     <div class="col-sm">
                       <div class="text-muted">
-                        Showing <span class="fw-semibold">5</span> of <span class="fw-semibold">25</span> Results
+                        Showing <span class="fw-semibold">1</span> to <span class="fw-semibold">10</span> Results
                       </div>
                     </div>
-                    <div class="col-sm-auto  mt-3 mt-sm-0">
+                    <!-- <div class="col-sm-auto  mt-3 mt-sm-0">
                       <ul class="pagination pagination-separated pagination-sm mb-0 justify-content-center">
                         <li class="page-item disabled">
                           <a href="#" class="page-link">←</a>
@@ -301,7 +313,7 @@
                           <a href="#" class="page-link">→</a>
                         </li>
                       </ul>
-                    </div>
+                    </div> -->
                   </div>
 
                 </div> <!-- .card-body-->
@@ -321,5 +333,12 @@
   <!-- container-fluid -->
 </div>
 <!-- /.content-wrapper -->
+<?php echo $this->section('script_table') ?>
+<script>
+  $(document).ready(function() {
+    $('#customerTableDashboardBarang').DataTable();
+  });
+</script>
+<?php echo $this->endSection() ?>
 
 <?php echo $this->endSection() ?>

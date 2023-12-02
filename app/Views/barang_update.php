@@ -35,33 +35,58 @@
                                         <input value="<?php echo $data_barang['nm_barang'] ?>" type="text" class="form-control" name="nm_barang"></input>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">ID Penerima</label>
-                                        <input value="<?php echo $data_barang['id_penerima'] ?>" type="text" class="form-control"" name=" id_penerima"></input>
+                                        <label for="firstNameinput" class="form-label">Nama Penerima</label>
+                                        <select class="form-select mb-3" name="id_penerima" aria-label="Default select example" id="barangKaryawanUpdate">
+                                            <option value="<?php echo $data_barang['id_penerima'] ?>"><?php echo $data_barang['nama_penerima'] ?></option>
+                                        </select>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Status</label>
                                         <select class="form-select mb-3" name="status" aria-label="Default select example">
-                                            <option value="1">Belum Diterima</option>
-                                            <option value="2">Sudah Diterima</option>
+                                            <option value="<?php echo $data_barang['status'] ?>">
+                                                <?php if ($data_barang['status'] == 1) : ?>
+                                                    Belum Diterima
+                                                <?php elseif ($data_barang['status'] == 2) : ?>
+                                                    Sudah Diterima
+                                                <?php endif; ?>
+                                            </option>
+                                            <?php if ($data_barang['status'] == 1) : ?>
+                                                <option value="2">Sudah Diterima</option>
+                                            <?php endif; ?>
+                                            <?php if ($data_barang['status'] == 2) : ?>
+                                                <option value="1">Belum Diterima</option>
+                                            <?php endif; ?>
                                         </select>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Catatan</label>
-                                        <input value="<?php echo $data_barang['catatan'] ?>" type="text" class="form-control" name="catatan"></input>
+                                        <textarea class="form-control" name="catatan"><?php echo $data_barang['catatan'] ?></textarea>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Foto Pertama</label>
-                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto1']) ?>" width="100" class="mb-3"></div>
+                                        <div class="mb-3">
+                                            <?php if (!empty($data_barang['foto1'])) : ?>
+                                                <img src="<?php echo base_url('img/' . $data_barang['foto1']) ?>" width="150">
+                                            <?php endif; ?>
+                                        </div>
                                         <input type="file" class="form-control" name="foto1" id="foto1"></input>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Foto Kedua</label>
-                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto2']) ?>" width="100" class="mb-3"></div>
+                                        <div class="mb-3">
+                                            <?php if (!empty($data_barang['foto2'])) : ?>
+                                                <img src="<?php echo base_url('img/' . $data_barang['foto2']) ?>" width="150">
+                                            <?php endif; ?>
+                                        </div>
                                         <input type="file" class="form-control" name="foto2" id="foto2"></input>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Foto Ketiga</label>
-                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto3']) ?>" width="100" class="mb-3"></div>
+                                        <div class="mb-3">
+                                            <?php if (!empty($data_barang['foto3'])) : ?>
+                                                <img src="<?php echo base_url('img/' . $data_barang['foto3']) ?>" width="150">
+                                            <?php endif; ?>
+                                        </div>
                                         <input type="file" class="form-control" name="foto3" id="foto3"></input>
                                     </div>
                                     <div class="card-footer">
@@ -77,4 +102,33 @@
     </div>
 </div>
 
+<?php echo $this->section('select2') ?>
+<script>
+    function selectDataKaryawan() {
+        $('#barangKaryawanUpdate').select2({
+            minimumInputLength: 3,
+            allowClear: true,
+            placeholder: 'Pilih Karyawan',
+            ajax: {
+                dataType: 'json',
+                url: "<?= base_url('BarangController/selectDataKaryawan') ?>",
+                delay: 500,
+                data: function(params) {
+                    return {
+                        search: params.term
+                    }
+                },
+                processResults: function(data, page) {
+                    return {
+                        results: data
+                    }
+                }
+            }
+        });
+    }
+    $(document).ready(function() {
+        selectDataKaryawan()
+    });
+</script>
+<?php echo $this->endSection() ?>
 <?php echo $this->endSection() ?>

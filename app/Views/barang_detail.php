@@ -40,11 +40,11 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Nama Penerima</label>
-                                        <input value="<?php echo $data_barang['nama_penerima'] ?>" type="text" class="form-control"" name=" id_penerima" disabled></input>
+                                        <input value="<?php echo $data_barang['nama_penerima'] ?>" type="text" class="form-control"" name=" nama_penerima" disabled></input>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Email Penerima</label>
-                                        <input value="<?php echo $data_barang['email_penerima'] ?>" type="text" class="form-control"" name=" id_penerima" disabled></input>
+                                        <input value="<?php echo $data_barang['email_penerima'] ?>" type="text" class="form-control"" name=" email_penerima" disabled></input>
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Status</label><br>
@@ -56,19 +56,39 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="firstNameinput" class="form-label">Catatan</label>
-                                        <input value="<?php echo $data_barang['catatan'] ?>" type="text" class="form-control" name="catatan" disabled></input>
+                                        <textarea class="form-control" name="catatan" disabled><?php echo $data_barang['catatan'] ?></textarea>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Foto Pertama</label>
-                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto1']) ?>" width="100" class="mb-3" disabled></div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Foto Kedua</label>
-                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto2']) ?>" width="100" class="mb-3" disabled></div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Foto Ketiga</label>
-                                        <div><img src="<?php echo base_url('img/' . $data_barang['foto3']) ?>" width="100" class="mb-3" disabled></div>
+                                    <div class="d-flex">
+                                        <div class="border p-2">
+                                            <label for="firstNameinput" class="form-label">Foto Pertama</label>
+                                            <div>
+                                                <?php if (!empty($data_barang['foto1'])) : ?>
+                                                    <img src="<?php echo base_url('img/' . $data_barang['foto1']) ?>" width="250">
+                                                <?php else : ?>
+                                                    <img src="<?= base_url('assets/dist/img/not-attached.png') ?>" alt="" width="250">
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        <div class="mx-3 border p-2">
+                                            <label for="firstNameinput" class="form-label">Foto Kedua</label>
+                                            <div>
+                                                <?php if (!empty($data_barang['foto2'])) : ?>
+                                                    <img src="<?php echo base_url('img/' . $data_barang['foto2']) ?>" width="250">
+                                                <?php else : ?>
+                                                    <img src="<?= base_url('assets/dist/img/not-attached.png') ?>" alt="" width="250">
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        <div class="border p-2">
+                                            <label for="firstNameinput" class="form-label">Foto Ketiga</label>
+                                            <div>
+                                                <?php if (!empty($data_barang['foto3'])) : ?>
+                                                    <img src="<?php echo base_url('img/' . $data_barang['foto3']) ?>" width="250">
+                                                <?php else : ?>
+                                                    <img src="<?= base_url('assets/dist/img/not-attached.png') ?>" alt="" width="250">
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </form>

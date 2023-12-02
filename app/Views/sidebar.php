@@ -1,7 +1,7 @@
 <!-- LOGO -->
 <div class="navbar-brand-box">
     <!-- Dark Logo-->
-    <a href="<?= site_url('admin/home') ?>" class="logo logo-dark">
+    <a href="<?= base_url('dashboard'); ?>>" class="logo logo-dark">
         <span class="logo-sm">
             <img src="<?= base_url('assets/admin/images/logo-sm.png') ?>" alt="" height="22">
         </span>
@@ -10,7 +10,7 @@
         </span>
     </a>
     <!-- Light Logo-->
-    <a href="<?= site_url('admin/home') ?>" class="logo logo-light">
+    <a href="<?= base_url('dashboard'); ?>" class="logo logo-light">
         <span class="logo-sm">
             <img src="<?= base_url('assets/dist/img/logo_desnet2.webp') ?>" alt="" height="35">
         </span>
@@ -45,7 +45,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link menu-link" href="/KaryawanController/karyawan_read">
+                <a class="nav-link menu-link" href="<?= base_url('karyawan_read'); ?>">
                     <i class="las la-users"></i> <span data-key="t-authentication">Data Karyawan</span>
                 </a>
             </li>
@@ -59,7 +59,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link menu-link" href="#">
+                <a class="nav-link menu-link" href="<?= base_url('surat_read'); ?>">
                     <i class="las la-envelope"></i> <span data-key="t-authentication">Data Surat</span>
                 </a>
             </li>

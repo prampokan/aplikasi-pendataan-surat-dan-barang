@@ -9,7 +9,7 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
     <meta content="Themesbrand" name="author">
     <!-- App favicon -->
-    <link rel="shortcut icon" href="<?= base_url('assets/admin/images/favicon.ico') ?>">
+    <link rel="shortcut icon" href="<?= base_url('assets/dist/img/logo_desnet2.webp') ?>">
 
     <!-- Layout config Js -->
     <script src="<?= base_url('assets/admin/js/layout.js') ?>"></script>
@@ -51,7 +51,7 @@
                             <p class="mb-0 text-muted">&copy;
                                 <script>
                                     document.write(new Date().getFullYear())
-                                </script> Data Managemet | PT.Desnet Human Technology
+                                </script> Data Managemet | PT.Des Teknologi Informasi
                             </p>
                         </div>
                     </div>

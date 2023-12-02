@@ -13,7 +13,7 @@
                                 <h5 class="card-title">Tambah Data Karyawan</h5>
                             </div>
                             <div class="col-lg-6 d-flex justify-content-end">
-                                <a href="<?= base_url('pengguna_read'); ?>" class="btn btn-sm btn-success">Kembali</a>
+                                <a href="<?= base_url('karyawan_read'); ?>" class="btn btn-sm btn-success">Kembali</a>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                             <form action="" method="POST">
                                 <div class="row">
                                     <div class="mb-3">
-                                        <label for="firstNameinput" class="form-label">Username</label>
+                                        <label for="firstNameinput" class="form-label">Nama</label>
                                         <input type="text" class="form-control" name="username" placeholder="Username Pengguna"></></input>
                                     </div>
                                     <div class="mb-3">
